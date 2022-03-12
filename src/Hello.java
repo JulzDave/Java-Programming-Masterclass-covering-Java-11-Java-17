@@ -1,14 +1,14 @@
 public class Hello {
     public static void main(String[] args) {
 
-        byte myMinByteValue = Byte.MIN_VALUE;
-        byte myMaxByteValue = Byte.MAX_VALUE ;
-        System.out.println("Byte maximum value = " + myMaxByteValue);
-        System.out.println("Byte minimum value = " + myMinByteValue);
+        short myMinShortValue = Short.MIN_VALUE;
+        short myMaxShortValue = Short.MAX_VALUE ;
+        System.out.println("Short maximum value = " + myMaxShortValue);
+        System.out.println("Short minimum value = " + myMinShortValue);
         
-        // A Byte automatically gets converted to an int by the compiler if its out of range.
-        System.out.println("Busted max value = " + (myMaxByteValue + 1111)); // overflow;
-        System.out.println("Busted min value = " + (myMinByteValue - Integer.MIN_VALUE - 124)); // underflow;
+        // A Short automatically gets converted to an int by the compiler if its out of range.
+        System.out.println("Busted max value = " + (myMaxShortValue + 1111)); // overflow;
+        System.out.println("Busted min value = " + (myMinShortValue - Integer.MIN_VALUE - 124)); // underflow;
 
     }
 }
